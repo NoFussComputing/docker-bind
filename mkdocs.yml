@@ -3,7 +3,7 @@ INHERIT: website-template/mkdocs.yml
 docs_dir: 'docs'
 
 repo_name: Docker Bind
-repo_url: https://gitlab.com/nofusscomputing/projects/docker-glpi
+repo_url: https://gitlab.com/nofusscomputing/projects/docker-bind
 edit_uri: '/-/ide/project/nofusscomputing/projects/docker-bind/edit/development/-/docs/'
 
 nav:
@@ -17,9 +17,13 @@ nav:
 
   - projects/index.md
 
-  - GLPI Docker:
+  - Docker: 
+  
+    - projects/docker/index.md
 
-    - projects/docker/bind/index.md
+    - Bind DNS Server:
+
+      - projects/docker/bind/index.md
 
 
 - Operations: 
