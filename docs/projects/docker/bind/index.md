@@ -8,6 +8,9 @@ about: https://gitlab.com/nofusscomputing/projects/docker-bind
 
 This docker container is for running the BIND9 DNS Server from within a container environment. Usage of the Alpine Linux image for the base was chosen to limit container size. Inclusive of bind9, `supervisord` is the entry point which starts bind9. As supervisor daemon is used, a health check has been setup and automagically runs and if any service fails, the health check will adjust accordingly.
 
+!!! info TL;DR
+    `docker pull nofusscomputing/bind:latest` for stable branch or `docker pull nofusscomputing/bind:dev` for head branch.
+
 
 ## Configuration
 
