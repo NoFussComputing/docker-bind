@@ -14,7 +14,7 @@ This docker container is for running the BIND9 DNS Server from within a containe
 
 ## Configuration
 
-All Configuration for Bind is located in directory `/etc/bind/` when launching this container it's recommended that this path be a volume and you place your own config files there. Without doing so the container will start a DNS server that will only accept connections from `127.0.0.1`
+All Configuration for Bind is located in directory `/etc/bind/conf.d` when launching this container it's recommended that this path be a volume and you place your own config files there. Without doing so the container will start a DNS server that will be of no use.
 
 !!! info
     Bind9 Documentation can be found at <https://bind9.readthedocs.io/en/v9.18.19/reference.html>
