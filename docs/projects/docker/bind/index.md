@@ -35,8 +35,8 @@ services:
     ports:
       - "53:53"
     volumes:
-      - data_bind9:/etc/bind
-      # - logs_bind9:/var/logs
+      - data_bind9:/etc/bind/conf.d
+      - logs_bind9:/var/logs
     environment:
       - TIMEZONE=UTC
     restart: always
@@ -47,7 +47,7 @@ services:
 
 volumes:
   data_bind9:
-  # logs_bind9:
+  logs_bind9:
 
 
 networks:
