@@ -1,5 +1,4 @@
 
-ARG TARGETPLATFORM="linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/arm/v7"
 ARG VERSION_BIND="9.18.19-r0"
 
 FROM --platform=$TARGETPLATFORM alpine:3.18.4
