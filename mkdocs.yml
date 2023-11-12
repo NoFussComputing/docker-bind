@@ -17,9 +17,13 @@ nav:
 
   - projects/index.md
 
-  - GLPI Docker:
+  - Docker: 
+  
+    - projects/docker/index.md
 
-    - projects/docker/bind/index.md
+    - Bind DNS Server:
+
+      - projects/docker/bind/index.md
 
 
 - Operations: 
