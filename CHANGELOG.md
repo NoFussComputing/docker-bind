@@ -1,3 +1,10 @@
+## 0.1.0 (2024-03-19)
+
+### Features
+
+- **bind**: [569fc252](https://gitlab.com/nofusscomputing/projects/docker-bind/-/commit/569fc2528c4eeb8e61482ff89b8224b5109489c6) - run command to specify ipv4, config file and log file [ [!17](https://gitlab.com/nofusscomputing/projects/docker-bind/-/merge_requests/17) ]
+- **bind**: [01c9be4a](https://gitlab.com/nofusscomputing/projects/docker-bind/-/commit/01c9be4aebb6fab9caffde2ec5c48ccbfc60809f) - update 9.18.19-r0 -> 9.18.24-r0 [ [!17](https://gitlab.com/nofusscomputing/projects/docker-bind/-/merge_requests/17) ]
+
 ## 0.1.0rc0 (2023-11-13)
 
 ### Bug Fixes
