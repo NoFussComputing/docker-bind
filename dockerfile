@@ -1,7 +1,7 @@
 
-ARG VERSION_BIND="9.18.19-r0"
+ARG VERSION_BIND="9.18.24-r0"
 
-FROM --platform=$TARGETPLATFORM alpine:3.18.4
+FROM alpine:3.18.4
 
 
 ARG VERSION_BIND
@@ -11,7 +11,11 @@ RUN \
   apk upgrade --no-cache; \
   apk add --no-cache \
     bind==${VERSION_BIND} \
-    supervisor;
+    supervisor; \
+  rm -f \
+    /etc/bind/named.conf.authoritative \
+    /etc/bind/named.conf.recursive \
+    /etc/bind/rndc.key;
 
 
 EXPOSE \
@@ -33,3 +37,4 @@ RUN \
 
 
 CMD [ "/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf" ]
+# CMD ["named", "-c", "/etc/bind/named.conf", "-g", "-u", "named"]
